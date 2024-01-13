@@ -1,8 +1,8 @@
 # TUGAS-UAS-ALGORITMA
 **Anggota Kelompok :**
 
-1. Mumtaz Fikri Nazrullah (32602300002) bertugas membantu struktur data SORT dan video tutorialnya
-2. Faizal Imam Safangat (32602300019) bertugas membuat struktur data LINKED LIST dan video tutorialnya
+1. MUMTAZ FIKRI NAZRULLAH (32602300002) bertugas membantu struktur data SORT dan video tutorialnya
+2. FAIZAL IMAM SAFANGAT (32602300019) bertugas membuat struktur data LINKED LIST dan video tutorialnya
 3. M. MALIKUS SHALEH (32602300021) bertugas membantu struktur data GRAPH dan video tutorialnya
 4. MOHAMMAD BAYAN ALDINA (32602300024) bertugas membantu struktur data TREE dan video tutorialnya
 5. NAYLA ALVIN (32602300030) bertugas editing dan meng-upload video ke YouTube
@@ -25,22 +25,22 @@ Mengaplikasikan membuat program pengelompokan UAS Algoritma
 
 1. Membuat Kelas Anggota :
 
-	class Anggota { public: string nama; string jabatan; vector struktur;
+		class Anggota { public: string nama; string jabatan; vector struktur;
 
 Kelas ‘Anggota’ dibuat sebagai ‘public’ agar proses pendeklarasian dapat diakses dari luar kelas. Dalam kelas ‘Anggota’ kita membuat variabel ‘nama’ dan ‘jabatan’ dengan menggunakan tipe data string yang nantinya variabel ‘nama’ digunakan untuk menyimpan nama-nama struktur keanggotaan kelompok dan variabel ‘jabatan’ untuk menyimpan jabatan dari nama-nama struktur keanggotaan tersebut. Kemudian variabel ‘struktur’ berupa vektor keanggotaan dibawahnya.
 
 2. Konstruktor ‘Anggota’ Anggota(const string& dataNama, const string& dataJabatan): nama(dataNama), jabatan(dataJabatan){}
 
-	void tambahStruktur(const Anggota& bagan){ struktur.push_back(bagan); }
-
-	void tampilkanBagan(int org = 0) const { for(int i = 0; i < org; i++){ cout << " "; }
-
-	cout << "* " << jabatan << " " << nama << endl;
-
-	for(const auto& Anggota : struktur){
- 	   Anggota.tampilkanBagan(org + 1);
-	}
-	} };
+		void tambahStruktur(const Anggota& bagan){ struktur.push_back(bagan); }
+	
+		void tampilkanBagan(int org = 0) const { for(int i = 0; i < org; i++){ cout << " "; }
+	
+		cout << "* " << jabatan << " " << nama << endl;
+	
+		for(const auto& Anggota : struktur){
+	 	   Anggota.tampilkanBagan(org + 1);
+		}
+		} };
 
 Konstruktor ‘Anggota’ yang digunakan untuk menganalisis nama-nama sruktur keanggotaan kelompok, fungi tambahStruktur untuk menambahkan anggota bawahan kedalam vektor dan fungsi tampilkanBagan digunakan untuk menampilkan struktur bagan dalam bentuk hierarki yang memberikan identitas berdasarkan tingkatan dalam hierarki. Pada bagian 		rekursi, perubahan dilakukan dari struktur.tampilkanBagan(org + 1) menjadi anggota.tampilkanBagan(org + 1) dilakukan karena untuk menggunakan variabel anggota harus 			melakukan iterasi pada vektor struktur didalam fungsi masing-masing. Dengan melakukan perubahan tersebut, program akan menjalankan tanpa kesalahan dan akan menampilkan struktur keanggotaan dalam bentuk hierarki sesuai yang ada pada fungsi main nanti.
 
@@ -86,6 +86,7 @@ Saya akan menjelaskan fungsi dari int main berikut
 
 # D. SORT
 [https://youtu.be/jGY4ZXkaYf4?si=ilf6qVB_5sk-a2Xi] 
+
 Metode sort adalah suatu algoritma yang digunakan untuk mengurutkan elemen-elemen suatu kumpulan data. Tujuan utama dari pengurutan ini adalah untuk menyusun elemen-elemen data tersebut menjadi urutan tertentu, seperti dalam urutan numerik atau abjad. Pengurutan mempermudah pencarian dan pengelolaan data, dan ada berbagai metode sort yang digunakan tergantung pada kebutuhan dan karakteristik data yang diurutkan.
 
 1. Header Includes : Dalam pemrograman, "Header Includes" merujuk pada baris-baris kode yang memasukkan atau menyertakan file-file header ke dalam program. Header files adalah file teks yang berisi deklarasi fungsi, variabel, dan informasi lain yang diperlukan oleh program. Dengan memasukkan header files, program dapat mengakses definisi-definisi ini tanpa perlu menulis ulang kode secara lengkap. Contohnya seperti : Program menggunakan beberapa library standar C++, seperti , , , dan . Library digunakan untuk memanfaatkan metode sort.
