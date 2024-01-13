@@ -44,22 +44,21 @@ Kelas ‘Anggota’ dibuat sebagai ‘public’ agar proses pendeklarasian dapat
 
 Konstruktor ‘Anggota’ yang digunakan untuk menganalisis nama-nama sruktur keanggotaan kelompok, fungi tambahStruktur untuk menambahkan anggota bawahan kedalam vektor dan fungsi tampilkanBagan digunakan untuk menampilkan struktur bagan dalam bentuk hierarki yang memberikan identitas berdasarkan tingkatan dalam hierarki. Pada bagian 		rekursi, perubahan dilakukan dari struktur.tampilkanBagan(org + 1) menjadi anggota.tampilkanBagan(org + 1) dilakukan karena untuk menggunakan variabel anggota harus 			melakukan iterasi pada vektor struktur didalam fungsi masing-masing. Dengan melakukan perubahan tersebut, program akan menjalankan tanpa kesalahan dan akan menampilkan struktur keanggotaan dalam bentuk hierarki sesuai yang ada pada fungsi main nanti.
 
-3. Fungsi ‘main’ int main(){
+	3. Fungsi ‘main’ int main(){
 
-	Anggota ketua1("M. Malikus Shaleh", "Ketua :"); ketua1.tambahStruktur(Anggota("Faizal Imam Safangat\n", "Wakil Ketua :")); Anggota sekretaris("Nayla Alvin", "Sekretaris 1 	:"); sekretaris.tambahStruktur(Anggota("Novi Mutiara Sari\n", "Sekretaris 2 :")); Anggota anggotaKel1("M. Bayan Aldina", "Anggota 1 :"); Anggota anggotaKel2("Mumtaz Fikri 	N.\n", "Anggota 2 :");
-
-	ketua1.tambahStruktur(sekretaris); ketua1.tambahStruktur(anggotaKel1); ketua1.tambahStruktur(anggotaKel2);
-
-	Anggota ketua2("M. Yanuar Anshori", "Ketua :"); ketua2.tambahStruktur(Anggota("Fahad", "Anggota 1 :")); ketua2.tambahStruktur(Anggota("Lia Rahma", "Anggota 2 :")); 				ketua2.tambahStruktur(Anggota("Wahid Sandi Pujo", "Anggota 3 :")); ketua2.tambahStruktur(Anggota("Alif Naufal\n", "Angoota 4 :"));
-
-	Anggota ketua3("Faisal Anwar", "Ketua :"); ketua3.tambahStruktur(Anggota("Naufal Fairuzaj", "Anggota 1 :")); ketua3.tambahStruktur(Anggota("Navilla", "Anggota 2 :")); 			ketua3.tambahStruktur(Anggota("Silviyana", "Anggota 3 :")); ketua3.tambahStruktur(Anggota("Fitri Nur\n", "Angoota 4 :"));
-
-	Anggota ketua4("Emilul Fata", "Ketua :"); ketua4.tambahStruktur(Anggota("Rirqi Nu'man Hakim", "Anggota 1 :")); ketua4.tambahStruktur(Anggota("Bintang", "Anggota 2 :")); 		ketua4.tambahStruktur(Anggota("Haydar Fahri", "Anggota 3 :")); ketua4.tambahStruktur(Anggota("Raffy Akhsan\n", "Angoota 4 :"));
-
-	Anggota ketua5("Ilyas", "Ketua :"); ketua5.tambahStruktur(Anggota("Mahesa", "Anggota 1 :")); ketua5.tambahStruktur(Anggota("Andika", "Anggota 2 :")); 											ketua5.tambahStruktur(Anggota("Ivan", "Anggota 3 :")); ketua5.tambahStruktur(Anggota("Fania Agustina\n", "Angoota 4 :"));
-  Anggota ketua6("Alek Hidayatullah", "Ketua :"); ketua6.tambahStruktur(Anggota("Syarif Hidayatulah", "Anggota 1 :")); ketua6.tambahStruktur(Anggota("Veri Ramadhan",         "Anggota 2 :")); ketua6.tambahStruktur(Anggota("Zainal Fattah", "Anggota 3 :")); ketua6.tambahStruktur(Anggota("Syaifudin\n", "Angoota 4 :")); cout << "Kelompok UAS         Algoritma dan Struktur Data SMT Gasal Th. 2023/2024\n" << endl; cout << "Kelompok 1 :" << endl; ketua1.tampilkanBagan(); cout << "Kelompok 2 :" << endl;                     ketua2.tampilkanBagan(); cout << "kelompok 3 :" << endl; ketua3.tampilkanBagan(); cout << "Kelompok 4 :" << endl; ketua4.tampilkanBagan(); cout << "Kelompok 5 :" << endl;    ketua5.tampilkanBagan(); cout << Kelompok 6 :" << endl; ketua6.tampilkanBagan();
-
-    return 0; }
+		Anggota ketua1("M. Malikus Shaleh", "Ketua :"); ketua1.tambahStruktur(Anggota("Faizal Imam Safangat\n", "Wakil Ketua :")); Anggota sekretaris("Nayla Alvin", "Sekretaris 1 	:"); sekretaris.tambahStruktur(Anggota("Novi Mutiara Sari\n", "Sekretaris 2 :")); Anggota anggotaKel1("M. Bayan Aldina", "Anggota 1 :"); Anggota anggotaKel2("Mumtaz Fikri 	N.\n", "Anggota 2 :");
+	
+		ketua1.tambahStruktur(sekretaris); ketua1.tambahStruktur(anggotaKel1); ketua1.tambahStruktur(anggotaKel2);
+	
+		Anggota ketua2("M. Yanuar Anshori", "Ketua :"); ketua2.tambahStruktur(Anggota("Fahad", "Anggota 1 :")); ketua2.tambahStruktur(Anggota("Lia Rahma", "Anggota 2 :")); 				ketua2.tambahStruktur(Anggota("Wahid Sandi Pujo", "Anggota 3 :")); ketua2.tambahStruktur(Anggota("Alif Naufal\n", "Angoota 4 :"));
+	
+		Anggota ketua3("Faisal Anwar", "Ketua :"); ketua3.tambahStruktur(Anggota("Naufal Fairuzaj", "Anggota 1 :")); ketua3.tambahStruktur(Anggota("Navilla", "Anggota 2 :")); 			ketua3.tambahStruktur(Anggota("Silviyana", "Anggota 3 :")); ketua3.tambahStruktur(Anggota("Fitri Nur\n", "Angoota 4 :"));
+	
+		Anggota ketua4("Emilul Fata", "Ketua :"); ketua4.tambahStruktur(Anggota("Rirqi Nu'man Hakim", "Anggota 1 :")); ketua4.tambahStruktur(Anggota("Bintang", "Anggota 2 :")); 		ketua4.tambahStruktur(Anggota("Haydar Fahri", "Anggota 3 :")); ketua4.tambahStruktur(Anggota("Raffy Akhsan\n", "Angoota 4 :"));
+	 Anggota ketua5("Ilyas", "Ketua :"); ketua5.tambahStruktur(Anggota("Mahesa", "Anggota 1 :")); ketua5.tambahStruktur(Anggota("Andika", "Anggota 2 :")); 			ketua5.tambahStruktur(Anggota("Ivan", "Anggota 3 :")); ketua5.tambahStruktur(Anggota("Fania Agustina\n", "Angoota 4 :"));
+	  Anggota ketua6("Alek Hidayatullah", "Ketua :"); ketua6.tambahStruktur(Anggota("Syarif Hidayatulah", "Anggota 1 :")); ketua6.tambahStruktur(Anggota("Veri Ramadhan",         "Anggota 2 :")); ketua6.tambahStruktur(Anggota("Zainal Fattah", "Anggota 3 :")); ketua6.tambahStruktur(Anggota("Syaifudin\n", "Angoota 4 :")); cout << "Kelompok UAS Algoritma dan Struktur Data SMT Gasal Th. 2023/2024\n" << endl; cout << "Kelompok 1 :" << endl; ketua1.tampilkanBagan(); cout << "Kelompok 2 :" << endl; ketua2.tampilkanBagan(); cout << "kelompok 3 :" << endl; ketua3.tampilkanBagan(); cout << "Kelompok 4 :" << endl; ketua4.tampilkanBagan(); cout << "Kelompok 5 :" << endl;    ketua5.tampilkanBagan(); cout << Kelompok 6 :" << endl; ketua6.tampilkanBagan();
+	
+	    return 0; }
 
 Dalam fungsi main yang menggunakan tipe data integer kita membuat objek Anggota untuk mempresentasikan struktur keanggotaan kelompok, Program aplikasi yang kita buat merupakan pengelompokan anggota dalam uas algoritma dan struktur data kali ini, dengan menggunakan program C++ dan dibuat secara dinamis. Terdapat enam kelompok dimana masing-masing kelompok terdiri dari lima orang keanggotaan di lima kelompok dan enam orang keanggotaan di satu kelompok. Kelompok kita yang terdiri dari enam orang diimplementasikan dalam struktur hierarki yang terdiri dari ketua yang mempunyai asisten wakil ketua dan sekretaris 1 yang mempunyai asisten sekretaris 2, kemudian para anggota 1 dan anggota 2 yang disejajarkan dengan wakil ketua dan sekretaris 1 dimana akan langsung dibawah kepemimpinan ketua. Kemudian kelompok lain yang akan disetarakan dan kita hanya membuat kelompok 2-6 berstrukturkan ketua dan 4 orang anggota. Selanjutnya program akan menampilkan struktur keanggotaan yang sudah dibuat sebelumnya dalam bentuk hierarki pada fungsi tampilkanBagan()pada akhir program dengan pendeklarasian pada masing masing kelompoknya.
 
