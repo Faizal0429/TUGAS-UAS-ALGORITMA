@@ -1,7 +1,7 @@
 # TUGAS-UAS-ALGORITMA
 **Anggota Kelompok :**
 
-1. MUMTAZ FIKRI NAZRULLAH (32602300002) bertugas membantu struktur data SORT dan video tutorialnya
+1. MUMTAZ FIKRI NASRULLAH (32602300002) bertugas membantu struktur data SORT dan video tutorialnya
 2. FAIZAL IMAM SAFANGAT (32602300022) bertugas membuat struktur data LINKED LIST dan video tutorialnya
 3. M. MALIKUS SHALEH (32602300026) bertugas membantu struktur data GRAPH dan video tutorialnya
 4. MOHAMMAD BAYAN ALDINA (32602300024) bertugas membantu struktur data TREE dan video tutorialnya
